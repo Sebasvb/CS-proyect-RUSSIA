@@ -52,29 +52,8 @@ tabla_probabilidades = [1.00,0.27,0.60,0.10,0.50,0.04,0.34,0.12,0.26,0.24,0.22,0
                        [0.51,0.47,0.33,0.90,0.83,0.59,0.73,0.15,0.17,0.57,0.16,0.68,0.41,0.87,0.34,0.15,0.64,0.60,0.04,0.17,0.80,0.58,0.80,0.76,0.67,0.37,0.71,0.65,0.35,0.02,1.00,0.43],\
                        [0.54,0.40,0.33,0.91,0.53,0.65,0.95,0.24,0.75,0.27,0.11,0.04,0.96,0.31,0.30,0.59,0.02,0.69,0.57,0.54,0.50,0.92,0.92,0.65,0.90,0.49,0.23,1.00,0.82,0.89,0.57,1.00]
 print(tabla_probabilidades)
-
-
-print(tabla_probabilidades [0][2])
-
-
-
-def prob_alemania (pais2):
-    dicc = {}
-    dicc = {"Alemania":1.00,"Arabia_Saudita":0.27,"Argentina":0.60,"Australia":0.10,"Belgica":0.50,"Brasil":0.04,"Colombia":0.34,"Corea del Sur":0.12,"Costa Rica":0.26,"Croacia":0.24,"Dinamarca":0.22,"Egipto":0.23,"España":0.99,"Francia":0.44,"Inglaterra":0.02,"Iran":0.43,"Islandia":0.60,"Japon":0.19,"Marruecos":0.54,"Mexico":0.25,"Nigeria":0.35,"Panama":0.35,"Peru":0.00,"Polonia":0.35,"Portugal":0.62,"Rusia":0.17,"Senegal":0.69,"Serbia":0.62,"Suecia":0.88,"Suiza":0.52,"Tunez":0.49,"Uruguay":0.46}
-    return dicc[pais2]
-
-def prob_Arabia_Saudita (pais2):
-    dicc = {}
-    dicc = {"Alemania":0.63,"Arabia_Saudita":1.00,"Argentina":0.66,"Australia":0.29,"Belgica":0.93,"Brasil":0.19,"Colombia":0.91,"Corea del Sur":0.36,"Costa Rica":0.59,"Croacia":0.45,"Dinamarca":0.88,"Egipto":0.25,"España":0.18,"Francia":0.01,"Inglaterra":0.19,"Iran":0.73,"Islandia":0.65,"Japon":0.01,"Marruecos":0.82,"Mexico":0.70,"Nigeria":0.77,"Panama":0.05,"Peru":0.05,"Polonia":0.35,"Portugal":0.87,"Rusia":0.77,"Senegal":0.16,"Serbia":0.47,"Suecia":0.34,"Suiza":0.73,"Tunez":0.53,"Uruguay":0.60}
-    return dicc[pais2]
-
-
-def puntaje_paises(key,puntaje):
-    dicc2 = {}
-    dicc2.update({key,puntaje})
-    return print(dicc2)
-
-
+dicc2 = {"Alemania":0,"Arabia Saudita":1,"Argentina":2,"Australia":3,"Belgica":4,"Brasil":5,"Colombia":6,"Corea del Sur":7,"Costa Rica":8,"Croacia":9,"Dinamarca":10,"Egipto":11,"España":12,"Francia":13,"Inglaterra":14,"Iran":15,"Islandi":16,"Japon":17,"Marruecos":18,"Mexico":19,"Nigeria":20,"Panama":21,"Peru":22,"Polonia":23,"Portugal":24,"Rusia":25,"Senegal":26,"Serbia":27,"Suecia":28,"Suiza":29,"Tunez":30,"Uruguay":31}
+print(tabla_probabilidades[dicc2[input()]][dicc2[input()]])
 
 
 puntajes_pais2 =[]

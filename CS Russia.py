@@ -56,21 +56,6 @@ dicc2 = {"Alemania":0,"Arabia Saudita":1,"Argentina":2,"Australia":3,"Belgica":4
 print(tabla_probabilidades[dicc2[input()]][dicc2[input()]])
 
 
-puntajes_pais2 =[]
-pais1 = input()
-pais2 = input()
-pintaje = 0
-if pais1 == "Alemania" and pais2 == "Alemania" or "Arabia" or "Saudita"or "Argentina" or "Australia"or "Belgica"or "Brasil"or "Colombia"or "Corea del Sur"or "Costa Rica"or "Croacia"or "Dinamarca"or "Egipto"or "España"or "Francia"or "Inglaterra"or "Iran"or "Islandia"or "Japon"or "Marruecos"or "Mexico"or "Nigeria"or "Panama"or "Peru"or "Polonia"or "Portugal"or "Rusia"or "Senegal"or "Serbia"or "Suecia"or "Suiza"or "Tunez"or "Uruguay":
-    puntaje = prob_alemania(pais2)
-    if 1 < puntaje > 0.5 :
-        puntajes_pais2.append(3)
-        print(pais2," GANA",pais1,"PIERDE")
-    elif puntaje == 1:
-        puntajes_pais2.append(1)
-        print("EMPATE")
-    else:
-        print(pais2,"PIERDE",pais1,"GANA")
-print(puntajes_pais2)
 
 
 

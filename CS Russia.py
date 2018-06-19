@@ -14,10 +14,6 @@ def sorteo (bombos):
         lista_grupos.append(grupo)
     return lista_grupos
 
-lista = sorteo(bombos)
-
-print(lista)
-
 #                     Alemania Arabia Saudita Argentina Australia Belgica Brasil Colombia Corea del Sur Costa Rica Croacia Dinamarca Egipto España Francia Inglaterra Iran Islandia Japon Marruecos Mexico Nigeria Panama Peru Polonia Portugal Rusia Senegal Serbia Suecia Suiza Tunez Uruguay
 tabla_probabilidades = [1.00,0.27,0.60,0.10,0.50,0.04,0.34,0.12,0.26,0.24,0.22,0.23,0.99,0.44,0.02,0.43,0.60,0.19,0.54,0.25,0.35,0.35,0.00,0.35,0.62,0.17,0.69,0.62,0.88,0.52,0.49,0.46],\
                        [0.63,1.00,0.66,0.29,0.93,0.19,0.91,0.36,0.59,0.45,0.88,0.25,0.18,0.01,0.19,0.73,0.65,0.01,0.82,0.70,0.77,0.54,0.05,0.68,0.87,0.77,0.16,0.47,0.34,0.73,0.53,0.60],\
@@ -54,6 +50,43 @@ tabla_probabilidades = [1.00,0.27,0.60,0.10,0.50,0.04,0.34,0.12,0.26,0.24,0.22,0
 print(tabla_probabilidades)
 dicc2 = {"Alemania":0,"Arabia Saudita":1,"Argentina":2,"Australia":3,"Belgica":4,"Brasil":5,"Colombia":6,"Corea del Sur":7,"Costa Rica":8,"Croacia":9,"Dinamarca":10,"Egipto":11,"España":12,"Francia":13,"Inglaterra":14,"Iran":15,"Islandi":16,"Japon":17,"Marruecos":18,"Mexico":19,"Nigeria":20,"Panama":21,"Peru":22,"Polonia":23,"Portugal":24,"Rusia":25,"Senegal":26,"Serbia":27,"Suecia":28,"Suiza":29,"Tunez":30,"Uruguay":31}
 print(tabla_probabilidades[dicc2[input()]][dicc2[input()]])
+
+
+lista = sorteo(bombos)
+
+print(lista)
+#Simulacion de VS con partidos, Tenmeos que hacerlo mucho más eficiente sin repetir tanto código  .  print de partidos para jugar todos contra todos, falta los if's y falta meter las probabilidades en los if´s.
+print(lista[0][0], "VS", lista [0][1])
+print(lista[0][0], "VS", lista [0][2])
+print(lista[0][0], "VS", lista [0][3])
+print("--------------------------------------------")
+print(lista[1][0], "VS", lista [1][1])
+print(lista[1][0], "VS", lista [1][2])
+print(lista[1][0], "VS", lista [1][3])
+print("--------------------------------------------")
+print(lista[2][0], "VS", lista [2][1])
+print(lista[2][0], "VS", lista [2][2])
+print(lista[2][0], "VS", lista [2][3])
+print("--------------------------------------------")
+print(lista[3][0], "VS", lista [3][1])
+print(lista[3][0], "VS", lista [3][2])
+print(lista[3][0], "VS", lista [3][3])
+print("--------------------------------------------")
+print(lista[4][0], "VS", lista [4][1])
+print(lista[4][0], "VS", lista [4][2])
+print(lista[4][0], "VS", lista [4][3])
+print("--------------------------------------------")
+print(lista[5][0], "VS", lista [5][1])
+print(lista[5][0], "VS", lista [5][2])
+print(lista[5][0], "VS", lista [5][3])
+print("--------------------------------------------")
+print(lista[6][0], "VS", lista [6][1])
+print(lista[6][0], "VS", lista [6][2])
+print(lista[6][0], "VS", lista [6][3])
+print("--------------------------------------------")
+print(lista[7][0], "VS", lista [7][1])
+print(lista[7][0], "VS", lista [7][2])
+print(lista[7][0], "VS", lista [7][3])
 
 
 

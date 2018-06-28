@@ -94,21 +94,23 @@ print(tabla_probabilidades[dicc2[input()]][dicc2[input()]])
 
 
 
-
-lista = sorteo(bombos)
 print(lista)
-print(lista[0][0], "VS", lista [0][1])
-for i in range(8):
-    if (tabla_probabilidades[dicc2[lista[i][0]]][dicc2[lista [i][1]]]) > 0.5:
-        print(tabla_probabilidades[dicc2[lista[i][0]]][dicc2[lista [i][1]]])
-        print("GANA:",lista[i][0])
-
-    elif (tabla_probabilidades[dicc2[lista[i][0]]][dicc2[lista [i][1]]]) < 0.5:
-        print(tabla_probabilidades[dicc2[lista[i][0]]][dicc2[lista [i][1]]])
-        print("PIERDE:",lista[i][0])
-
-    else:
-        print("EMPATE ENTRE:", lista[i][0],"Y",lista[i][1] )
+h =0
+for i in range(len(lista)):
+    while h < 3:
+        if h == 0:
+            for j in range(1,4):
+                print(lista[i][h], " vs", lista [i][j])
+            h +=1
+        if h == 1:
+            for j in range(2,4):
+                print(lista[i][h], " vs", lista [i][j])
+            h += 1
+        if h == 2:
+            for j in range(3,4):
+                print(lista[i][h], " vs", lista [i][j])
+            h += 1
+    h =0
 
 
 

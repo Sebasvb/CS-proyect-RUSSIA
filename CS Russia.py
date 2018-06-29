@@ -95,29 +95,72 @@ print(tabla_probabilidades[dicc2[input()]][dicc2[input()]])
 
 
 print(lista)
-h =0
-for i in range(len(lista)):
-    while h < 3:
-        if h == 0:
-            for j in range(1,4):
-                print(lista[i][h], " vs", lista [i][j])
-            h +=1
-        if h == 1:
-            for j in range(2,4):
-                print(lista[i][h], " vs", lista [i][j])
-            h += 1
-        if h == 2:
-            for j in range(3,4):
-                print(lista[i][h], " vs", lista [i][j])
-            h += 1
+def partidos_para_16avos_8avos_4tos (lista):
     h =0
+    for i in range(len(lista)):
+        while h < 3:
+            if h == 0:
+                for j in range(1,4):
+                    #print(lista[i][h], " vs", lista [i][j])
+                    if lista[i][h] == lista [i][j]:
+                        print("SALE EMPATE NO SE CUENTA PUNTOS POR SER PAISES IGUALES")
 
+                    if 0.5 < (tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]]) < 1:
+                        print(lista[i][h],"AND",lista [i][j])
+                        print(tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]])
+                        print("GANA:",lista[i][j])
 
+                    elif (tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]]) < 0.5:
+                        print(lista[i][h],"AND",lista [i][j])
+                        print(tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]])
+                        print("PIERDE:",lista[i][j])
 
+                    else:
+                        print("EMPATE ENTRE:", lista[i][h],"Y",lista[i][j] )
 
+                h +=1
+            if h == 1:
+                for j in range(2,4):
+                    #print(lista[i][h], " vs", lista [i][j])
+                    if lista[i][h] == lista [i][j]:
+                        print("SALE EMPATE NO SE CUENTA PUNTOS POR SER PAISES IGUALES")
 
+                    if 0.5 < (tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]]) < 1:
+                        print(lista[i][h],"AND",lista [i][j])
+                        print(tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]])
+                        print("GANA:",lista[i][j])
 
+                    elif (tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]]) < 0.5:
+                        print(lista[i][h],"AND",lista [i][j])
+                        print(tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]])
+                        print("PIERDE:",lista[i][j])
 
+                    else:
+                        print("EMPATE ENTRE:", lista[i][h],"Y",lista[i][j] )
 
+                h += 1
+            if h == 2:
+                for j in range(3,4):
+                    #print(lista[i][h], " vs", lista [i][j])
+                    if lista[i][h] == lista [i][j]:
+                        print("SALE EMPATE NO SE CUENTA PUNTOS POR SER PAISES IGUALES")
+
+                    if 0.5 < (tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]]) < 1:
+                        print(lista[i][h],"AND",lista [i][j])
+                        print(tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]])
+                        print("GANA:",lista[i][j])
+
+                    elif (tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]]) < 0.5:
+                        print(lista[i][h],"AND",lista [i][j])
+                        print(tabla_probabilidades[dicc2[lista[i][h]]][dicc2[lista [i][j]]])
+                        print("PIERDE:",lista[i][j])
+
+                    else:
+                        print("EMPATE ENTRE:", lista[i][h],"Y",lista[i][j] )
+
+                h += 1
+        h =0
+
+print(partidos_para_16avos_8avos_4tos (lista))
 
 
